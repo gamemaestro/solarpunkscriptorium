@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Solarpunk Scriptorium | Old Ink Records</title>
+<meta name="description" content="The Solarpunk Scriptorium is Old Ink Records' house of Histories, Mysteries and Comedies: we look back at the record so you can find the throughline of your life and leave your own.">
+<link rel="canonical" href="https://solarpunkscriptorium.com/">
+<link rel="icon" href="old-ink-mark.png" type="image/png">
+<meta name="theme-color" content="#1a1a1a">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Solarpunk Scriptorium">
+<meta property="og:title" content="The Solarpunk Scriptorium">
+<meta property="og:description" content="Histories, Mysteries and Comedies from Old Ink Records. The throughline of your life is waiting to be found.">
+<meta property="og:url" content="https://solarpunkscriptorium.com/">
+<meta property="og:image" content="https://solarpunkscriptorium.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A painted solarpunk library at dusk, with arched windows over a glowing harbor city">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Solarpunk Scriptorium">
+<meta name="twitter:description" content="Histories, Mysteries and Comedies from Old Ink Records.">
+<meta name="twitter:image" content="https://solarpunkscriptorium.com/og-image.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://solarpunkscriptorium.com/#website",
+      "url": "https://solarpunkscriptorium.com/",
+      "name": "The Solarpunk Scriptorium",
+      "publisher": { "@id": "https://oldinkrecords.com/#organization" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://solarpunkscriptorium.com/#webpage",
+      "url": "https://solarpunkscriptorium.com/",
+      "name": "The Solarpunk Scriptorium",
+      "isPartOf": { "@id": "https://solarpunkscriptorium.com/#website" },
+      "about": { "@id": "https://oldinkrecords.com/#organization" },
+      "primaryImageOfPage": "https://solarpunkscriptorium.com/scriptorium-hero.jpg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://oldinkrecords.com/#organization",
+      "name": "Old Ink Records",
+      "alternateName": "The Solarpunk Scriptorium",
+      "legalName": "Jacks Method, LLC",
+      "url": "https://oldinkrecords.com/",
+      "logo": "https://solarpunkscriptorium.com/old-ink-mark.png",
+      "slogan": "The throughline of your life is waiting to be found.",
+      "description": "A solarpunk research and record keeping institution publishing Histories, Mysteries and Comedies.",
+      "knowsAbout": ["Solarpunk", "Record keeping", "Legacy work", "History", "Worldbuilding"],
+      "founder": {
+        "@type": "Person",
+        "@id": "https://jordenlacyjackson.com/#person",
+        "name": "Jorden Lacy Jackson",
+        "url": "https://jordenlacyjackson.com/"
+      },
+      "sameAs": [
+        "https://solarpunkscriptorium.com/",
+        "https://www.youtube.com/@oldinkrecords"
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: a lamplit reading room. Centered engraved lockup over the painted library, then three shelves (Histories, Mysteries, Comedies), then the way back to the sandbox. Single dark look, the mirror of the light Sandbox page. Old Ink system: Cinzel display, Georgia body, gold hairlines. */
+:root{
+  --ground:#1a1a1a;     /* deep charcoal */
+  --ground-2:#2b2b2b;   /* secondary dark */
+  --warm:#4a4642;       /* deep chocolate */
+  --cream:#dbcdc2;      /* text */
+  --cream-dim:#a89f96;  /* captions */
+  --gold:#c9a96e;       /* accent, lines */
+  --gold-soft:#d8bd8a;
+  --hair:rgba(201,169,110,.38);
+  --display:"Cinzel","Trajan Pro","Times New Roman",serif;
+  --body:Georgia,"Iowan Old Style","Times New Roman",serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--cream);font-family:var(--body);font-size:18px;line-height:1.65}
+a{color:var(--gold)}
+a:hover{color:var(--gold-soft)}
+a:focus-visible{outline:2px solid var(--gold-soft);outline-offset:4px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+
+/* Hero: painting if present, ink glow if not */
+.hero{position:relative;min-height:min(80vh,820px);display:flex;align-items:center;text-align:center;
+  background:
+    linear-gradient(180deg,rgba(10,10,10,.35) 0%,rgba(10,10,10,.55) 55%,rgba(26,26,26,1) 100%),
+    url("scriptorium-hero.jpg") center/cover no-repeat,
+    radial-gradient(ellipse at 50% 40%,rgba(201,169,110,.16),transparent 60%),
+    var(--ground)}
+.hero .wrap{width:100%;padding-block:110px 90px;display:flex;flex-direction:column;align-items:center;gap:20px}
+.mark{width:104px;height:104px;filter:drop-shadow(0 0 22px rgba(201,169,110,.4))}
+.eyebrow{font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+h1{margin:0;font-family:var(--display);font-weight:700;font-size:clamp(40px,7.4vw,92px);line-height:1.02;letter-spacing:.08em;text-transform:uppercase;text-wrap:balance;text-shadow:0 2px 24px rgba(0,0,0,.6)}
+.sub{margin:0;font-style:italic;font-size:clamp(20px,2.4vw,26px);color:var(--cream);max-width:34ch;text-shadow:0 2px 16px rgba(0,0,0,.7)}
+.rule{width:120px;height:1px;background:var(--hair)}
+.ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:8px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 26px;border-radius:999px;font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold);color:var(--cream);background:radial-gradient(ellipse at 50% 0%,rgba(201,169,110,.22),rgba(201,169,110,.06));transition:border-color .28s cubic-bezier(.22,.61,.36,1),box-shadow .28s cubic-bezier(.22,.61,.36,1)}
+.btn:hover{color:var(--cream);border-color:var(--gold-soft);box-shadow:0 0 24px rgba(201,169,110,.28)}
+.btn-quiet{border-color:var(--hair);background:transparent}
+.btn svg{width:19px;height:19px;flex:none}
+
+section{padding-block:80px}
+.thesis{background:var(--ground)}
+.thesis p{margin:0 auto;max-width:36ch;text-align:center;font-size:clamp(22px,2.8vw,30px);line-height:1.45;text-wrap:balance}
+.thesis p span{color:var(--gold)}
+
+.shelves{background:var(--ground-2);border-block:1px solid var(--hair)}
+.head{display:flex;flex-direction:column;align-items:center;gap:6px;margin-bottom:40px;text-align:center}
+.head h2{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(26px,3.4vw,38px);letter-spacing:.1em;text-transform:uppercase}
+.head p{margin:0;font-style:italic;color:var(--cream-dim)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.shelf{padding:8px 32px;display:flex;flex-direction:column;gap:10px;min-width:0;border-left:1px solid var(--hair)}
+.shelf:first-child{border-left:0}
+.shelf .verb{font-family:var(--display);font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.shelf h3{margin:0;font-family:var(--display);font-weight:600;font-size:26px;letter-spacing:.08em;text-transform:uppercase}
+.shelf p{margin:0;font-size:17px;color:var(--cream)}
+
+.record{background:var(--warm)}
+.record .row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px}
+.record h2{margin:0 0 8px;font-family:var(--display);font-weight:600;font-size:clamp(24px,3vw,32px);letter-spacing:.08em;text-transform:uppercase}
+.record p{margin:0;max-width:52ch}
+
+.mirror{background:var(--ground);text-align:center}
+.mirror .wrap{display:flex;flex-direction:column;align-items:center;gap:20px}
+.mirror p{margin:0;max-width:50ch}
+
+footer{border-top:1px solid var(--hair);padding-block:40px;color:var(--cream-dim);font-size:15px}
+footer .row{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between}
+footer .brand{display:flex;align-items:center;gap:14px}
+footer .brand img{width:40px;height:40px}
+footer .pub{font-family:var(--display);letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:var(--cream)}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+footer nav a{color:var(--cream-dim);text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+footer nav a:hover{color:var(--gold-soft)}
+
+@media (max-width:820px){
+  .grid{grid-template-columns:1fr;gap:28px}
+  .shelf{border-left:0;border-top:1px solid var(--hair);padding:24px 0 0}
+  .shelf:first-child{border-top:0;padding-top:0}
+  .hero .wrap{padding-block:80px 64px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="mark" src="old-ink-mark.png" width="320" height="320" alt="Old Ink Records winged Phi mark">
+    <div class="eyebrow">Old Ink Records</div>
+    <h1>Solarpunk Scriptorium</h1>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="sub">The throughline of your life is waiting to be found.</p>
+    <div class="ctas">
+      <a class="btn" href="https://www.youtube.com/@oldinkrecords" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5l5 2.5-5 2.5z"/></svg>
+        Watch on YouTube
+      </a>
+      <a class="btn btn-quiet" href="https://oldinkrecords.com/">Visit Old Ink Records</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="thesis">
+    <div class="wrap">
+      <p>We're at a threshold, living between worlds. <span>The scriptorium is the mirror</span>, where we look back so we know what to carry forward.</p>
+    </div>
+  </section>
+
+  <section class="shelves">
+    <div class="wrap">
+      <div class="head">
+        <h2>Three Shelves</h2>
+        <p>One library</p>
+      </div>
+      <div class="grid">
+        <article class="shelf">
+          <span class="verb">Look back</span>
+          <h3>Histories</h3>
+          <p>Where our words, tools and records came from, and who decided what was kept.</p>
+        </article>
+        <article class="shelf">
+          <span class="verb">Investigate</span>
+          <h3>Mysteries</h3>
+          <p>The open questions in the record. What we know, we say we know.</p>
+        </article>
+        <article class="shelf">
+          <span class="verb">Keep the record</span>
+          <h3>Comedies</h3>
+          <p>Our own lives, written down with humor and care, so the story outlasts us.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="record">
+    <div class="wrap row">
+      <div>
+        <h2>Start your own record</h2>
+        <p>Old Ink keeps its records so you will start keeping yours. Guides and tools for your own legacy work live at Old Ink Records.</p>
+      </div>
+      <a class="btn" href="https://oldinkrecords.com/">Begin at Old Ink</a>
+    </div>
+  </section>
+
+  <section class="mirror">
+    <div class="wrap">
+      <p>The scriptorium looks back. Its other half, the Solarpunk Sandbox, dreams forward and tests what we learn here.</p>
+      <a class="btn btn-quiet" href="https://solarpunksandbox.com/">Step into the Sandbox</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <div class="brand">
+      <img src="old-ink-mark.png" width="40" height="40" alt="">
+      <span class="pub">An Old Ink Records Publication</span>
+    </div>
+    <nav aria-label="Elsewhere">
+      <a href="https://oldinkrecords.com/">oldinkrecords.com</a>
+      <a href="https://www.youtube.com/@oldinkrecords" rel="noopener">YouTube</a>
+      <a href="https://solarpunksandbox.com/">Solarpunk Sandbox</a>
+    </nav>
+    <span>© 2026 Old Ink Records</span>
+  </div>
+</footer>
+
+</body>
+</html>
