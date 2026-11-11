@@ -107,7 +107,8 @@ a:focus-visible{outline:2px solid var(--gold-soft);outline-offset:4px}
 .mark{width:104px;height:104px;filter:drop-shadow(0 0 22px rgba(201,169,110,.4))}
 .eyebrow{font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
 h1{margin:0;font-family:var(--display);font-weight:700;font-size:clamp(40px,7.4vw,92px);line-height:1.02;letter-spacing:.08em;text-transform:uppercase;text-wrap:balance;text-shadow:0 2px 24px rgba(0,0,0,.6)}
-.sub{margin:0;font-style:italic;font-size:clamp(20px,2.4vw,26px);color:var(--cream);max-width:34ch;text-shadow:0 2px 16px rgba(0,0,0,.7)}
+.sub{margin:0;font-style:italic;font-size:clamp(20px,2.4vw,26px);line-height:1.45;color:var(--cream);max-width:40ch;text-wrap:balance;text-shadow:0 2px 16px rgba(0,0,0,.7)}
+.sub span{color:var(--gold)}
 .rule{width:120px;height:1px;background:var(--hair)}
 .ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:8px}
 .btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 26px;border-radius:999px;font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold);color:var(--cream);background:radial-gradient(ellipse at 50% 0%,rgba(201,169,110,.22),rgba(201,169,110,.06));transition:border-color .28s cubic-bezier(.22,.61,.36,1),box-shadow .28s cubic-bezier(.22,.61,.36,1)}
@@ -122,7 +123,7 @@ section{padding-block:80px}
 
 .shelves{background:var(--ground-2);border-block:1px solid var(--hair)}
 .head{display:flex;flex-direction:column;align-items:center;gap:6px;margin-bottom:40px;text-align:center}
-.head h2{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(26px,3.4vw,38px);letter-spacing:.1em;text-transform:uppercase}
+.head h2{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(16px,4.2vw,38px);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
 .head p{margin:0;font-style:italic;color:var(--cream-dim)}
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
 .shelf{padding:8px 32px;display:flex;flex-direction:column;gap:10px;min-width:0;border-left:1px solid var(--hair)}
@@ -166,7 +167,7 @@ footer nav a:hover{color:var(--gold-soft)}
     <div class="eyebrow">Old Ink Records</div>
     <h1>Solarpunk Scriptorium</h1>
     <div class="rule" aria-hidden="true"></div>
-    <p class="sub">The throughline of your life is waiting to be found.</p>
+    <p class="sub">We're at a threshold, living between worlds. <span>The scriptorium is the mirror</span>, where we look back so we know what to carry forward.</p>
     <div class="ctas">
       <a class="btn" href="https://www.youtube.com/@oldinkrecords" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5l5 2.5-5 2.5z"/></svg>
@@ -178,17 +179,10 @@ footer nav a:hover{color:var(--gold-soft)}
 </header>
 
 <main>
-  <section class="thesis">
-    <div class="wrap">
-      <p>We're at a threshold, living between worlds. <span>The scriptorium is the mirror</span>, where we look back so we know what to carry forward.</p>
-    </div>
-  </section>
-
   <section class="shelves">
     <div class="wrap">
       <div class="head">
-        <h2>Three Shelves</h2>
-        <p>One library</p>
+        <h2>Three Rooms, One Library</h2>
       </div>
       <div class="grid">
         <article class="shelf">
@@ -214,7 +208,7 @@ footer nav a:hover{color:var(--gold-soft)}
     <div class="wrap row">
       <div>
         <h2>Start your own record</h2>
-        <p>Old Ink keeps its records so you will start keeping yours. Guides and tools for your own legacy work live at Old Ink Records.</p>
+        <p>Guides and tools for your own legacy work live at Old Ink Records.</p>
       </div>
       <a class="btn" href="https://oldinkrecords.com/">Begin at Old Ink</a>
     </div>
